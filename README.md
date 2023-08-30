@@ -8,11 +8,22 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the React app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `nodemon server.js`
+
+Runs the Express backend in the development mode.\
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.\
+
+Make sure you have nodemon installed globally.\
+```npm install -g nodemon```
 
 ### `npm test`
 
