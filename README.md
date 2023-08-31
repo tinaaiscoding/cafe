@@ -14,16 +14,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `nodemon server.js`
+### `npx nodemon server.js`
 
 Runs the Express backend in the development mode.\
 Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.\
-
-Make sure you have nodemon installed globally.\
-```npm install -g nodemon```
 
 ### `npm test`
 

@@ -12,12 +12,14 @@ export default function App() {
   const [user, setUser] = useState(null);
   return (
     <main className="App">
-      <NavBar />
       {user ? (
-        <Routes>
-          <Route path="/orders" element={<OrderHistoryPage />} />
-          <Route path="/orders/new" element={<NewOrderPage />} />
-        </Routes>
+        <>
+          <NavBar />
+          <Routes>
+            <Route path="/orders" element={<OrderHistoryPage />} />
+            <Route path="/orders/new" element={<NewOrderPage />} />
+          </Routes>
+        </>
       ) : (
         <AuthPage />
       )}
