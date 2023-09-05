@@ -33,6 +33,12 @@ async function login(req, res) {
   }
 }
 
+function checkToken(req, res) {
+  // req.user will always be there for you when a token is sent
+  console.log('req.user', req.user);
+  res.json(req.exp);
+}
+
 /*-- Helper Functions --*/
 function createJWT(user) {
   return jwt.sign(
@@ -46,4 +52,5 @@ function createJWT(user) {
 module.exports = {
   create,
   login,
+  checkToken
 };
